@@ -1,0 +1,58 @@
+﻿* Idea
+   * a phone that isn’t able to randomly listen in to you whenever it wants
+* Reason
+   * apps are listening.  I don’t want them to listen all the time and overhear my private/personal conversations when I have no idea they’re listening.. Privacy plz.
+* Features
+   * Want to be able to turn off the muffling of listening on-demand
+   * Phone and apps still have access to the mics!  
+      * I want to be able to use facebook/insta video, etc.. I just don’t want them listening in at other times.  
+   * All mics effectively blocked from listening 
+      * iphone 7 has FOUR mics
+   * Is very simple to operate - no/minimal extra steps to use the phone
+   * Ability to validate that the case is working properly
+* Implementation ideas/notes
+   * Foam rubber to block noise?
+      * Any better materials?
+   * White noise generators - thin flat tiny speakers?
+      * How will these work on the mics that are on the bottom of the phone?  Is it good enough to get close to those mics?
+   * How to attach:
+      * Flap(s) that wrap around and are held via magnets
+      * Flap(s) that wrap around and are held via snap-bracelet kind of thing
+      * Flaps can be cute, like animal legs hugging the phone or something
+   * Phone case has to be the kind with front, otherwise it can’t block front mics
+   * Test App
+      * Start test
+      * Wait a couple seconds for case closing
+      * Make phone beep to indicate test is starting (case should be closed)
+      * then try to listen through all the mics
+         * Check db level that can be heard
+         * Check if can get any speech out?
+      * Beep again to indicate test completion
+      * Present report
+
+
+First steps - Sept 7-8, bought some various dampening materials (see notes).  
+Neoprene is the squishiest, dampens sound ok in my super duper rough test.
+
+
+There are FOUR LIGHTS!  I mean.. Microphones..
+The front top mic is ANNOYING AF.  It’s inset so you can’t block the sound easily because noise from the case goes into the phone. Bleh. It seems like a 100% physical blocking situation will not work, will need to use white noise as well.  I also found another company that is making a very fancy super blocking phone and selling it for like $1k.. :o
+
+
+Sept 11th - went to Akihabara, wandered around like a moron and asked a bunch of people but couldn’t find the tiny speaker I’m looking for..
+https://www.digikey.jp/product-detail/en/soberton-inc/SP-1003/433-1139-ND/6562938
+I bought the Sunhayato Model SBS-P02 which is a 38mm diameter speaker just to try out.  It conveniently has leads attached so I can just stick it right in the breadboard.
+I bought these speakers on AliExpress to try out:
+https://www.aliexpress.com/item/20pcs-Speaker-phone-tablet-micro-speaker-1W-8R-8-Euro-1-watt-1015-10-15MM-4mm/32813097082.html
+20pcs Speaker phone tablet micro speaker 1W 8R 8 Euro 1 watt 1015 10 * 15MM 4mm thick
+I paid $4.77 for them..
+
+
+Sept 14th - used arduino uno with the sunhayato speaker mentioned above and made some white noise wooo.. Used a 10k resistor to dial down the volume to a level that isn’t really noticeable in a room with air circulation (exposed speaker) and tested it over the front facing speaker and it works GREAT to block noise.  Easy peasy mac and cheesy.
+Probably would like to use something like an Adafruit Trinket board or something equivalently tiny for PoC. Next question will be.. Do I need a speaker for the bottom as well?  Or will just the front-facing speaker be enough..  Need to check on apps as to how to access mics.  Ok, checked, will need to test recording via all mics and see how it works.
+
+
+I feel kind of at a bit of a loss as to how to proceed with the case.. I really need the other speaker stuffs.  I ordered some moldable thermoplastic.. I want to make a base mold of a case that will fit the phone inside a layer of neoprene.  I guess I could also go ahead with making the cute felt design to cover the outside..
+
+
+Also I could really use a macbook.. Geez why did I buy this stupid not-macbook.. Oh yeah, bc I was cheap.
