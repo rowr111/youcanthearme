@@ -1,4 +1,4 @@
-#define speakerPin 1
+#define speakerPin 0
  
 unsigned long lastClick;
 

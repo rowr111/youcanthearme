@@ -66,3 +66,7 @@ Also I could really use a macbook.. Geez why did I buy this stupid not-macbook..
  - First tested new speaker with arduino UNO and confirmed it works - shoved the speaker wires into the breadboard, hah.  works great.  kept 10k resistor for now.
  - confirmed settings on Arduino Trinket - use Adafruit Trinket 8MHz as the board, USBTinyISP as the bootloader.  speakertest program loads fine onto the Trinket.
  - next plan is to solder wires to everything and make something I can test with the phone case.  will set up two speakers, connecting to pins 0 and 1. hopefully it works!
+ 
+08-11-18 - 
+ - soldered up above mentioned speaker to Trinket. works well and speaker outputs on pin 0 
+ - realized I could really use some 1) wire cutters and 2) one of those solder holder things.. chip clips are a poor substitute, lol.. ordered those on amazon.
