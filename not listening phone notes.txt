@@ -56,3 +56,13 @@ I feel kind of at a bit of a loss as to how to proceed with the case.. I really 
 
 
 Also I could really use a macbook.. Geez why did I buy this stupid not-macbook.. Oh yeah, bc I was cheap.
+
+07-11-18 - 
+ - used new speaker (Digi-Key PN 433-1139-ND) https://www.digikey.com/product-detail/en/soberton-inc/SP-1003/433-1139-ND/6562938
+ 
+ - used Adafruit Trinket (adafruit pn 1501).  I only have the 5V version, seems this will not work with LiPo battery.
+  - https://learn.adafruit.com/introducing-trinket/pinouts
+  
+ - First tested new speaker with arduino UNO and confirmed it works - shoved the speaker wires into the breadboard, hah.  works great.  kept 10k resistor for now.
+ - confirmed settings on Arduino Trinket - use Adafruit Trinket 8MHz as the board, USBTinyISP as the bootloader.  speakertest program loads fine onto the Trinket.
+ - next plan is to solder wires to everything and make something I can test with the phone case.  will set up two speakers, connecting to pins 0 and 1. hopefully it works!
