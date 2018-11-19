@@ -70,3 +70,11 @@ Also I could really use a macbook.. Geez why did I buy this stupid not-macbook..
 08-11-18 - 
  - soldered up above mentioned speaker to Trinket. works well and speaker outputs on pin 0 
  - realized I could really use some 1) wire cutters and 2) one of those solder holder things.. chip clips are a poor substitute, lol.. ordered those on amazon.
+ 
+19-11-18 - 
+ - got the wire cutters and solder holder thing from amazon
+ - tried some test with the speaker and it doesn't work that well.  grrr.
+ - soldered another speaker to pin #1 of the Trinket.
+ - did some trials with the two speaker method and it's better but still not that good.
+ - going to try reinforcing the sides of holder with rubber (it's not currently in its final reinforced state)
+ 

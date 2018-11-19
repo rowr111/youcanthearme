@@ -1,9 +1,11 @@
 #define speakerPin 0
+#define speakerPin1 1
  
 unsigned long lastClick;
 
 void setup() {
    pinMode(speakerPin,OUTPUT);
+   pinMode(speakerPin1, OUTPUT);
    lastClick = micros();   
 }
 
@@ -35,5 +37,6 @@ void loop() {
       if ((micros() - lastClick) > 50 ) { // Changing this value changes the frequency.
         lastClick = micros();
        digitalWrite (speakerPin, generateNoise());
+       digitalWrite (speakerPin1, generateNoise());
       }
 }
